@@ -1,10 +1,45 @@
 #include <iostream>
+#include "Sales_item.h"
 
 using namespace std;
 
 int main()
 { 
-//sdfds
+	Sales_item total,trans;
+
+	if (cin >>total)
+	{
+		while (cin >> trans)
+		{
+			if (total.same_isbn(trans))
+			{
+				total = total + trans;
+			}
+			else
+			{
+				cout << total << endl;
+				total = trans;
+			}
+		}
+
+		cout << total << endl;
+	}
+	else
+	{
+		cout << "No data" << endl;
+		return -1;
+	}
+ 
+
+
+	
+
+	/*
+	Sales_item book;
+	cin>>book;
+	cout << book << endl;*/
+	 
+	/*
 	int x,y;
 
 	cout << "ÇëÊäÈëX£º";
@@ -33,7 +68,7 @@ int main()
 		if ( i % 10 == 0)
 			cout <<endl;
 		cout << i << " ";
-	}
+	}*/
 	
 
 	//for
@@ -92,4 +127,5 @@ int main()
 
 	//cout << "Hello Jim";
 	//cin >> i;
+	return 0;
 }
