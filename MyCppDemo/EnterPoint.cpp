@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 { 
-
+//sdfds
 	int x,y;
 
 	cout << "ÇëÊäÈëX£º";
