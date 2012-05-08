@@ -5,6 +5,39 @@ using namespace std;
 
 int main()
 { 
+
+	int ds,zs;
+	cout << "请输入底数:";
+	cin>>ds;
+	cout << "请输入支数：";
+	cin >> zs;
+
+	int result=1;
+
+	for (int i = 0; i < zs;i++)
+	{
+		result *= ds;
+	}
+	
+	cout << result;
+
+/*
+	  string i = "A" "abb " "df";
+
+	cout << i << endl;
+
+	cout << "select stu,stuName,stuAge \
+			stuClass from student \
+			order by id desc \
+		";
+
+	cout << "who goes with F\145rgus?\012";
+		
+	cout <<"2M\n";
+	cout <<"2M" <<"\n";
+	cout << "2 \n M \n";
+*/
+/*
 	Sales_item total,trans;
 
 	if (cin >>total)
@@ -29,7 +62,7 @@ int main()
 		cout << "No data" << endl;
 		return -1;
 	}
- 
+ */
 
 
 	
