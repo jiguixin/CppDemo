@@ -5,6 +5,19 @@ using namespace std;
 
 int main()
 {  
+/* // & 引用与const引用
+	int ival = 123;
+
+	int &refival = ival;
+	refival = 2;
+	cout << "ival:"<<ival << " &refival: "<<refival<<endl;
+
+	const int &refConst = ival;
+
+	ival = 222;
+
+	cout << "refConst: " << refConst << endl;
+*/
 
 	/*string name = "asdfsadfsadf";
 	string stuName("jim test");
