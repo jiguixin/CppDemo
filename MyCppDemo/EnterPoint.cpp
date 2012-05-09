@@ -4,8 +4,18 @@
 using namespace std;
 
 int main()
-{ 
+{  
 
+	/*string name = "asdfsadfsadf";
+	string stuName("jim test");
+
+	string num(10,'9');
+
+	cout << name << endl;
+	cout << stuName << endl;
+	cout << num << endl;
+*/
+/*
 	int ds,zs;
 	cout << "ÇëÊäÈëµ×Êı:";
 	cin>>ds;
@@ -20,7 +30,7 @@ int main()
 	}
 	
 	cout << result;
-
+*/
 /*
 	  string i = "A" "abb " "df";
 
