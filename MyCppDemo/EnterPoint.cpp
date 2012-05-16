@@ -1,10 +1,103 @@
 #include <iostream>
+#include <vector>
 #include "Sales_item.h"
+#include <cctype>
 
 using namespace std;
+using std::vector;
 
+class Address
+{
+public:
+		//
+
+private:
+	string country;
+	string city;
+	string street;
+	string number;
+};
 int main()
 {  
+	vector<string> words;
+	string word;
+	while (cin>>word)
+		words.push_back(word);
+
+	for(vector<string>::iterator iter= words.begin();iter != words.end();++iter)
+	{
+		cout << *iter;
+	}
+
+/*
+	//习题3.14
+	vector<string> words;
+	string word;
+	while (cin>>word)
+		words.push_back(word);
+
+	for (vector<string>::size_type idx =0; idx < words.size(); idx++)
+	{
+		for (string::size_type strIdx =0;strIdx < words[idx].length();strIdx++)
+		{
+			if (islower(words[idx][strIdx]))
+			{
+				words[idx][strIdx] = toupper(words[idx][strIdx]);
+			}
+		}
+
+		cout << words[idx] << "  ";
+		if (idx % 8 == 0)
+		{
+			cout << endl;
+		}
+		 
+	}*/
+
+	/*
+	//对vector 操作 习题3.13
+
+	vector<int> intArr;
+	 
+	int inputData;
+	while(cin >> inputData)
+	{
+		intArr.push_back(inputData);
+	}
+
+	if (intArr.size() %2 != 0)
+		cout << "输入个数为奇数，不能参见最后一次运算"<<endl;
+
+	for (vector<int>::size_type idx = 0; idx != intArr.size();idx++)
+	{
+		vector<int>::size_type nextIdx = idx +1;
+		if (nextIdx >= intArr.size())
+		{ 
+			break;
+		}
+			
+	    int result =intArr[idx]+intArr[nextIdx];
+
+		cout << intArr[idx] <<"+" << intArr[nextIdx] << "="<< result<<endl; 
+
+		vector<int>::size_type lastIdx = intArr.size() -1-idx;
+
+		if ( idx > lastIdx)
+			break;
+		int flResult = intArr[idx]+intArr[lastIdx];
+		cout << intArr[idx] << "+" << intArr[lastIdx] << "="<<flResult<<endl;
+		 
+	}
+
+	string k;
+    cin>>k;
+	cout <<k;
+
+	
+	*/
+
+
+
 /* // & 引用与const引用
 	int ival = 123;
 
