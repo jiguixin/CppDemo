@@ -74,9 +74,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CppDemoTest.cpp" />
     <ClCompile Include="EnterPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CppDemoTest.h" />
     <ClInclude Include="Sales_item.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

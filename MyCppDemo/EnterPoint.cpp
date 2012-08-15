@@ -2,6 +2,7 @@
 #include <vector>
 #include "Sales_item.h"
 #include <cctype>
+#include "CppDemoTest.h"
 
 using namespace std;
 using std::vector;
@@ -19,6 +20,13 @@ private:
 };
 int main()
 {  
+	//PointCompareRefence();
+
+	//PointToPoint();
+
+	NewAndDelete();
+
+	/*
 	vector<string> words;
 	string word;
 	while (cin>>word)
@@ -29,7 +37,7 @@ int main()
 		cout << *iter;
 	}
 
-/*
+
 	//Ï°Ìâ3.14
 	vector<string> words;
 	string word;
